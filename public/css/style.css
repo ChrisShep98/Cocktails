@@ -1,0 +1,134 @@
+/* Overall structure + minor styles */
+div{
+    text-align: center;
+}
+
+.initalList:hover{
+    cursor:pointer;
+}
+
+body{
+    background: url('https://media.cntraveler.com/photos/5d92734ad19ce4000851d966/5:4/w_3300,h_2640,c_limit/00-lionstail-boston-2019-michaeldiskin.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    font-family: "Inter var",ui-sans-serif,system-ui,-apple-system,system-ui,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+}
+
+/* h1 and input/button style */
+
+h1{
+    color: #000000;
+    /* background: linear-gradient(0.25turn, #dedffd, #ffffff, #fddec3);    border-radius: .5rem; */
+    background: linear-gradient(0.25turn, #e7c0a9, #ffffff, #e7c0a9);    border-radius: .5rem;
+    display: inline-block;
+    width: 300px;
+    padding: .75rem 1rem;
+}
+
+/* List of drinks style */
+
+.divListOfDrinks{
+    padding: 0 25% 0 25%;
+}
+
+#initalListOfDrinks{
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0;
+}
+
+.initalList{
+    border: 1px solid black;
+    /* background-color:#f9e1b5; */
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 5%;
+    padding: 25px 15px;
+    margin: 10px;
+    width: 75px;
+    min-width: 75px;
+}
+.initalList:hover{
+    background-color: rgb(249,250,251);
+    margin: 0px;
+    padding: 32px 22px;
+}
+
+.initalList{
+    opacity: 0;
+    animation: fadeIn 0.9s 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fadeIn {
+    0% {
+      opacity: 0.0;
+    }
+    100% {
+      opacity: 1.0;
+    }
+  }
+
+
+/* Drink details */
+
+#drinkName, #ingredientsMeasure, #instructions, img{
+    color: black;
+    /* list-style-position: inside; */
+}
+
+#drinkDetail{
+    background-color:rgba(255, 255, 255, 0.9);
+    border-radius: 5%;
+    border: 1px solid black;
+    display: none;
+    padding: 30px;
+}
+#instructions{
+    max-width: 300px;
+}
+
+img{
+    height: 200px;
+  }
+
+button,input{
+  background-color: #FFFFFF;
+  border: 0;
+  border-radius: .5rem;
+  box-sizing: border-box;
+  color: #111827;
+  font-size: .875rem;
+  font-weight: 600;
+  line-height: 1.25rem;
+  padding: .75rem 1rem;
+  text-align: center;
+  text-decoration: none #D1D5DB solid;
+  text-decoration-thickness: auto;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+  cursor: pointer;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+button,input:hover {
+  background-color: rgb(249,250,251);
+}
+
+button,input:focus {
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+}
+
+button,input:focus-visible {
+  box-shadow: none;
+}
+
+#containerForDrinkDetail{
+    display: flex;
+    justify-content: center;
+}
